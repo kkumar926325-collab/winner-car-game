@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#07071a">
+<title>Winner Car Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <canvas id="game"></canvas>
+
+  <div id="hud" class="hidden">
+    <div class="row">
+      <div class="score"><small>SCORE</small><b id="score">0</b><em>BEST <span id="hbest">0</span></em></div>
+      <div id="lives"></div>
+      <div class="sp"></div>
+    </div>
+    <div class="row2">
+      <div class="chip"><span class="coin-ico"></span><b id="coins">0</b></div>
+      <div class="chip"><b id="speed">0</b><small>km/h</small></div>
+    </div>
+  </div>
+
+  <div id="topBtns">
+    <button id="pauseBtn" class="ib hidden" aria-label="Pause">❚❚</button>
+    <button id="muteBtn" class="ib" aria-label="Sound on/off">🔊</button>
+  </div>
+
+  <div id="controls" class="hidden">
+    <button id="left" class="ctl" aria-label="Move left">◀</button>
+    <button id="right" class="ctl" aria-label="Move right">▶</button>
+  </div>
+
+  <section id="start" class="screen">
+    <div class="logo"><h1>WINNER</h1><h2>CAR GAME</h2></div>
+    <div class="card"><span>Best score</span><b id="sBest">0</b></div>
+    <button id="playBtn" class="btn">PLAY</button>
+    <p class="hint">Swipe or tap ◀ ▶ to change lanes.<br>Grab coins, dodge traffic.</p>
+  </section>
+
+  <section id="pause" class="screen hidden">
+    <h2 class="title">PAUSED</h2>
+    <button id="resumeBtn" class="btn">RESUME</button>
+    <button id="pRestart" class="btn sec">RESTART</button>
+    <button id="pMenu" class="btn sec">MAIN MENU</button>
+  </section>
+
+  <section id="over" class="screen hidden">
+    <h2 class="title bad">GAME OVER</h2>
+    <div id="newBest" class="badge hidden">★ NEW BEST ★</div>
+    <div class="card col">
+      <div><span>Score</span><b id="oScore">0</b></div>
+      <div><span>Coins</span><b id="oCoins">0</b></div>
+      <div><span>Best</span><b id="oBest">0</b></div>
+    </div>
+    <button id="restartBtn" class="btn">RESTART</button>
+    <button id="menuBtn" class="btn sec">MAIN MENU</button>
+  </section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
