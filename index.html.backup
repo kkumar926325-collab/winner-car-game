@@ -6,8 +6,6 @@
 <meta name="theme-color" content="#07071a">
 <title>Winner Car Game</title>
 <link rel="stylesheet" href="style.css">
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#07071A">
 </head>
 <body>
 <div id="app">
@@ -62,13 +60,6 @@
   </section>
 </div>
 <script src="script.js"></script>
-<script>
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker.register("pwabuilder-sw.js");
-  });
-}
-</script>
 </body>
 </html>
 

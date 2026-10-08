@@ -1,0 +1,13 @@
+{
+  "background_color": "#07071a",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "winner car game",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "winner car",
+  "start_url": "/",
+  "theme_color": "#07071a",
+  "id": "winner-car-game",
+  "description": "A fast and exciting mobile car racing game built with HTML, CSS and JavaScript."
+}
